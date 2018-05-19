@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* HEADER */
+
+header {
+    background-color: #ebebeb;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#logo-clinica {
+    width: 80px;
+}
+
+#menu-hamburguer {
+    width: 30px;
+}
+
+header nav {
+    display: none;
+}
+
+/* BANNER */
+
+.beiradinha-site {
+    width: 1200px;
+    margin: auto;
+    max-width: 100%;
+}
+
+.banner {
+    position: relative;
+    overflow: hidden;
+    height: 600px;
+    z-index: -1;
+}
+
+.banner img {
+    width: 100%;
+    position: absolute;
+    transform: translateX(100%);
+    transition: .5s;
+}
+
+.banner img.ativa{
+    transform: translateX(0);
+}
+
+
+@media(min-width: 680px) {
+    
+    /* HEADER */
+    #menu-hamburguer {
+        display: none;
+    }
+
+    header nav {
+        display: block;
+    }
+
+    nav a {
+        margin: 0 10px;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        background-color: #20c89e; 
+        color: white;
+    }
+    
+    .servicos {
+        display: inline-block;
+        position: relative;
+    }
+    
+    .container-menu-servicos {
+        display: none;
+        position: absolute;
+        background-color: #626463;
+        padding: 10px;
+    }
+    
+    .container-menu-servicos p:hover {
+        background-color: #20c89e; 
+        color: white;
+    }
+
+    
+}
